@@ -1,8 +1,12 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
 function App() {
   return (
-    <div>
-      <h1>Aaron Chacko</h1>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 }
 
