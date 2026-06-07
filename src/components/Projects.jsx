@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function Projects() {
   const projects = [
     {
@@ -29,7 +31,13 @@ function Projects() {
 
   return (
     <section id="projects" className="bg-black text-white py-24 px-6">
-      <div className="max-w-6xl mx-auto">
+      <motion.div
+        className="max-w-6xl mx-auto"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="mb-16">
           <p className="text-blue-400 uppercase tracking-widest mb-2">
             Portfolio
@@ -142,7 +150,7 @@ function Projects() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function Experience() {
   const experiences = [
     {
@@ -28,7 +30,13 @@ function Experience() {
       id="experience"
       className="bg-black text-white py-24 px-6"
     >
-      <div className="max-w-5xl mx-auto">
+      <motion.div
+        className="max-w-5xl mx-auto"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
 
         <h2 className="text-4xl font-bold mb-16">
           Experience
@@ -62,7 +70,7 @@ function Experience() {
           ))}
         </div>
 
-      </div>
+      </motion.div>
     </section>
   );
 }

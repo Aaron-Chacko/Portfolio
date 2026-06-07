@@ -1,10 +1,18 @@
+import { motion } from "framer-motion";
+
 function About() {
   return (
     <section
       id="about"
       className="bg-black text-white py-24 px-6"
     >
-      <div className="max-w-6xl mx-auto">
+      <motion.div
+          className="max-w-6xl mx-auto"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
 
         <h2 className="text-4xl font-bold mb-16">
           About Me
@@ -84,7 +92,7 @@ function About() {
 
         </div>
 
-      </div>
+      </motion.div>
     </section>
   );
 }
