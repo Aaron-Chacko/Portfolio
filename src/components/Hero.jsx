@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="min-h-screen bg-black text-white flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen pt-24 md:pt-0 bg-black text-white flex items-center justify-center relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute w-96 h-96 bg-blue-600/20 blur-3xl rounded-full top-20 left-20"></div>
       <div className="absolute w-96 h-96 bg-purple-600/20 blur-3xl rounded-full bottom-20 right-20"></div>
@@ -18,11 +18,11 @@ function Hero() {
           AI Systems & Full-Stack Developer
         </p>
 
-        <h1 className="text-7xl md:text-8xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+        <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold mb-6 font-extrabold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
           Aaron Chacko
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-300 mb-6">
+        <p className="text-lg md:text-2xl text-gray-300 mb-6">
           Building intelligent systems, full-stack applications,
           and AI-powered user experiences.
         </p>
