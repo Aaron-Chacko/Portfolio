@@ -43,7 +43,7 @@ function Projects() {
             Portfolio
           </p>
 
-          <h2 className="text-5xl font-bold">Featured Projects</h2>
+          <h2 className="text-4xl font-bold">Featured Projects</h2>
         </div>
 
         {/* Featured Project */}

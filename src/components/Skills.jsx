@@ -42,7 +42,7 @@ function Skills() {
             Expertise
           </p>
 
-          <h2 className="text-5xl font-bold">
+          <h2 className="text-4xl font-bold">
             Technologies I Work With
           </h2>
         </div>
